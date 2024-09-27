@@ -1,0 +1,60 @@
+header{
+  background-image: linear-gradient(to right,white 0%,gray 100%);
+}
+
+header ul {
+  list-style: none;
+}
+
+#logo {
+  grid-area: lg;
+}
+
+#titre {
+  grid-area: tt;
+  color: black;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "roboto";
+}
+
+#clubami {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#fren-menu {
+  justify-self: flex-end;
+  align-self: flex-start;
+  grid-area: fe;
+}
+
+#fren-menu li {
+  position: relative;
+}
+
+#fren-menu li a {
+  display: block;
+  font-size: 16px;
+  line-height: 25px;
+  width: 90px;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+}
+
+#fren-menu #fren-submenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#fren-menu a:hover {
+  color: black;
+  font-weight: 400;
+}
+
+#fren-menu>li:hover #fren-submenu {
+  display: block;
+}
